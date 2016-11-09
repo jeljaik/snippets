@@ -30,12 +30,12 @@ dense_optimize(GRBEnv* env,
                double* solution,
                double* objvalP)
 {
+  std::cout << "Variable type: " << vtype << std::endl;
   GRBModel model = GRBModel(*env);
   int i, j;
   bool success = false;
 
   /* Add variables to the model */
-
   GRBVar* vars = model.addVars(lb, ub, NULL, vtype, NULL, cols);
 
   /* Populate A matrix */
@@ -75,9 +75,8 @@ dense_optimize(GRBEnv* env,
   return success;
 }
 
-int
-main(int   argc,
-     char *argv[])
+//////////////////////////// MAIN PROGRAM //////////////////////////////////////
+int main(int   argc, char *argv[])
 {
   GRBEnv* env = 0;
   try {
@@ -91,8 +90,13 @@ main(int   argc,
     bool    success;
     double  objval, sol[3];
 
+    char type[3];
+    for (int i=0;i<3;i++) {
+      type[i] = GRB_INTEGER;
+    }
+
     success = dense_optimize(env, 2, 3, c, &Q[0][0], &A[0][0], sense, rhs,
-                             lb, NULL, NULL, sol, &objval);
+                             lb, NULL, &type[0], sol, &objval);
 
     cout << "x: " << sol[0] << " y: " << sol[1] << " z: " << sol[2] << endl;
 
