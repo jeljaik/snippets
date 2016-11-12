@@ -1,0 +1,3 @@
+/Users/jorhabibeljaik/Code/snippets/PrettyErrors/build-clang/CMakeFiles/pretty-errors.dir
+/Users/jorhabibeljaik/Code/snippets/PrettyErrors/build-clang/CMakeFiles/ALL_BUILD.dir
+/Users/jorhabibeljaik/Code/snippets/PrettyErrors/build-clang/CMakeFiles/ZERO_CHECK.dir

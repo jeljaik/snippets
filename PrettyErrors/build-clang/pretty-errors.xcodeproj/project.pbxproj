@@ -1,0 +1,684 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		8065B7DC37C047CBB493A53C /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 0691A8C2CCEF4210B09F873C /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				E3D63907849F48188CDA3377 /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		81F6F88210764F74B8740C1B /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 0CF870A071864191805D2203 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				46F78C0A3744475EA4CC06B0 /* CMake Rules */,
+			);
+			dependencies = (
+				F8F052137DBC4F8C953B16F6 /* PBXTargetDependency */,
+				C220BF09E0F64DEABF9B8A9B /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		3C30163646A24257803F3883 /* /Users/jorhabibeljaik/Code/snippets/PrettyErrors/main.cpp */ = {isa = PBXBuildFile; fileRef = 475680596CE04403B8927111 /* /Users/jorhabibeljaik/Code/snippets/PrettyErrors/main.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		42A451D0BE984D48AF6E5B00 /* /Users/jorhabibeljaik/Code/snippets/PrettyErrors/MyClass.cpp */ = {isa = PBXBuildFile; fileRef = A3B559177DF6450CB4E7EBED /* /Users/jorhabibeljaik/Code/snippets/PrettyErrors/MyClass.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		C665B126E1364B699B790EB8 /* /Users/jorhabibeljaik/Code/snippets/PrettyErrors/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = F5F1A5C90250493282E23D75 /* /Users/jorhabibeljaik/Code/snippets/PrettyErrors/CMakeLists.txt */; settings = {COMPILER_FLAGS = ""; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		4B5232748B5D40139E929903 /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+		B77A0B18554747769A969784 /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+		C2CB6BAF27E04CD6A98D993F /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		D179B4F11C8D4CF78831EA8B /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+		FA8B210D28AA470B8223063B = {
+			isa = PBXBuildStyle;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		4340B89BA5704531B2E81380 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 592602839B964B5B8268526E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 46B82C435B56462ABFB3A3ED;
+			remoteInfo = "pretty-errors";
+		};
+		77466A09A4A04AD4842DB29D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 592602839B964B5B8268526E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8065B7DC37C047CBB493A53C;
+			remoteInfo = ZERO_CHECK;
+		};
+		E9DE08A5BF85473FA730932C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 592602839B964B5B8268526E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8065B7DC37C047CBB493A53C;
+			remoteInfo = ZERO_CHECK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		475680596CE04403B8927111 /* /Users/jorhabibeljaik/Code/snippets/PrettyErrors/main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = main.cpp; path = main.cpp; sourceTree = SOURCE_ROOT; };
+		8E83A492E12C448BAD7D2D0D /* /Users/jorhabibeljaik/Code/snippets/PrettyErrors/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		94AE0571FB6F40A2BEAC42E8 /* /Users/jorhabibeljaik/Code/snippets/PrettyErrors/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		A3B559177DF6450CB4E7EBED /* /Users/jorhabibeljaik/Code/snippets/PrettyErrors/MyClass.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = MyClass.cpp; path = MyClass.cpp; sourceTree = SOURCE_ROOT; };
+		F5F1A5C90250493282E23D75 /* /Users/jorhabibeljaik/Code/snippets/PrettyErrors/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		F8A04E5E69404C7089DE53EB /* pretty-errors */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = "pretty-errors"; refType = 0; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		0CD3022E3A784000882B95BB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F8A04E5E69404C7089DE53EB /* pretty-errors */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18DB323386924CB190BCBBD4 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		20A51B4A2B2F4CCCBCB0BD96 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				7A6DCFD616984D93A432D53B /* pretty-errors */,
+				A49DA01DE6454C28B990749B /* ALL_BUILD */,
+				469FE9CCDD184895904DB84E /* ZERO_CHECK */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		469FE9CCDD184895904DB84E /* ZERO_CHECK */ = {
+			isa = PBXGroup;
+			children = (
+				18DB323386924CB190BCBBD4 /* CMake Rules */,
+				8E83A492E12C448BAD7D2D0D /* /Users/jorhabibeljaik/Code/snippets/PrettyErrors/CMakeLists.txt */,
+			);
+			name = ZERO_CHECK;
+			sourceTree = "<group>";
+		};
+		7A6DCFD616984D93A432D53B /* pretty-errors */ = {
+			isa = PBXGroup;
+			children = (
+				A833E41C25534893A2550A65 /* Source Files */,
+				F5F1A5C90250493282E23D75 /* /Users/jorhabibeljaik/Code/snippets/PrettyErrors/CMakeLists.txt */,
+			);
+			name = "pretty-errors";
+			sourceTree = "<group>";
+		};
+		A49DA01DE6454C28B990749B /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				A59CAC7C29AD47C2896B7111 /* CMake Rules */,
+				94AE0571FB6F40A2BEAC42E8 /* /Users/jorhabibeljaik/Code/snippets/PrettyErrors/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		A59CAC7C29AD47C2896B7111 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		A65A85B46D5941BA996C8B79 = {
+			isa = PBXGroup;
+			children = (
+				20A51B4A2B2F4CCCBCB0BD96 /* Sources */,
+				BA8F5C9228614A6B84881B8D /* Resources */,
+				0CD3022E3A784000882B95BB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A833E41C25534893A2550A65 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				A3B559177DF6450CB4E7EBED /* /Users/jorhabibeljaik/Code/snippets/PrettyErrors/MyClass.cpp */,
+				475680596CE04403B8927111 /* /Users/jorhabibeljaik/Code/snippets/PrettyErrors/main.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		BA8F5C9228614A6B84881B8D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		46B82C435B56462ABFB3A3ED /* pretty-errors */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30C2404C77E2423194A7024A /* Build configuration list for PBXNativeTarget "pretty-errors" */;
+			buildPhases = (
+				16C7D884BEB34991AD8E788C /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FC9A138A2DDD40B3938EF96D /* PBXTargetDependency */,
+			);
+			name = "pretty-errors";
+			productName = "pretty-errors";
+			productReference = F8A04E5E69404C7089DE53EB /* pretty-errors */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		592602839B964B5B8268526E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 0730;
+			};
+			buildConfigurationList = 593A693222C74FA692B6741D /* Build configuration list for PBXProject "pretty-errors" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				C2CB6BAF27E04CD6A98D993F /* Debug */,
+				B77A0B18554747769A969784 /* Release */,
+				D179B4F11C8D4CF78831EA8B /* MinSizeRel */,
+				4B5232748B5D40139E929903 /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = A65A85B46D5941BA996C8B79;
+			projectDirPath = ../;
+			projectRoot = "";
+			targets = (
+				81F6F88210764F74B8740C1B /* ALL_BUILD */,
+				8065B7DC37C047CBB493A53C /* ZERO_CHECK */,
+				46B82C435B56462ABFB3A3ED /* pretty-errors */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2EBBB368BC994D30AD30D752 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		46F78C0A3744475EA4CC06B0 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/jorhabibeljaik/Code/snippets/PrettyErrors/build-clang -f /Users/jorhabibeljaik/Code/snippets/PrettyErrors/build-clang/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		79439BD859B64FF2BA0B94B4 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		E3D63907849F48188CDA3377 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/jorhabibeljaik/Code/snippets/PrettyErrors/build-clang -f /Users/jorhabibeljaik/Code/snippets/PrettyErrors/build-clang/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		16C7D884BEB34991AD8E788C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42A451D0BE984D48AF6E5B00 /* /Users/jorhabibeljaik/Code/snippets/PrettyErrors/MyClass.cpp */,
+				3C30163646A24257803F3883 /* /Users/jorhabibeljaik/Code/snippets/PrettyErrors/main.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C220BF09E0F64DEABF9B8A9B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 46B82C435B56462ABFB3A3ED /* pretty-errors */;
+			targetProxy = 4340B89BA5704531B2E81380 /* PBXContainerItemProxy */;
+		};
+		F8F052137DBC4F8C953B16F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8065B7DC37C047CBB493A53C /* ZERO_CHECK */;
+			targetProxy = 77466A09A4A04AD4842DB29D /* PBXContainerItemProxy */;
+		};
+		FC9A138A2DDD40B3938EF96D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8065B7DC37C047CBB493A53C /* ZERO_CHECK */;
+			targetProxy = E9DE08A5BF85473FA730932C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		22B45E6715DF456CA9E39689 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/jorhabibeljaik/Code/snippets/PrettyErrors/MyClass.h, /Users/jorhabibeljaik/Code/snippets/PrettyErrors/errorsHelper.h, );
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/jorhabibeljaik/Code/snippets/PrettyErrors/build-clang";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = RelWithDebInfo;
+		};
+		27F601827DAC43C3AC231F35 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/jorhabibeljaik/Code/snippets/PrettyErrors/MyClass.h, /Users/jorhabibeljaik/Code/snippets/PrettyErrors/errorsHelper.h, );
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/jorhabibeljaik/Code/snippets/PrettyErrors/build-clang";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = Release;
+		};
+		3446C4DA695D4193AAAF0835 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/jorhabibeljaik/Code/snippets/PrettyErrors/MyClass.h, /Users/jorhabibeljaik/Code/snippets/PrettyErrors/errorsHelper.h, );
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/jorhabibeljaik/Code/snippets/PrettyErrors/build-clang";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = MinSizeRel;
+		};
+		3EC8694D5065459E967331FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/jorhabibeljaik/Code/snippets/PrettyErrors/MyClass.h, /Users/jorhabibeljaik/Code/snippets/PrettyErrors/errorsHelper.h, );
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "    ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "pretty-errors";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/jorhabibeljaik/Code/snippets/PrettyErrors/build-clang";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = Debug;
+		};
+		44EC825616374F4D8CB985AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/jorhabibeljaik/Code/snippets/PrettyErrors/MyClass.h, /Users/jorhabibeljaik/Code/snippets/PrettyErrors/errorsHelper.h, );
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/jorhabibeljaik/Code/snippets/PrettyErrors/build-clang";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = Release;
+		};
+		46D8D0819CA148F9AD3390DF /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/jorhabibeljaik/Code/snippets/PrettyErrors/MyClass.h, /Users/jorhabibeljaik/Code/snippets/PrettyErrors/errorsHelper.h, );
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "pretty-errors";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/jorhabibeljaik/Code/snippets/PrettyErrors/build-clang";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = RelWithDebInfo;
+		};
+		4B3664F2C3CA4099BEF8109E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/jorhabibeljaik/Code/snippets/PrettyErrors/MyClass.h, /Users/jorhabibeljaik/Code/snippets/PrettyErrors/errorsHelper.h, );
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/jorhabibeljaik/Code/snippets/PrettyErrors/build-clang";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = Debug;
+		};
+		624E7E203BBD4FE8A30721B4 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/jorhabibeljaik/Code/snippets/PrettyErrors/MyClass.h, /Users/jorhabibeljaik/Code/snippets/PrettyErrors/errorsHelper.h, );
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/jorhabibeljaik/Code/snippets/PrettyErrors/build-clang";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = RelWithDebInfo;
+		};
+		64227A70FE2F4B2B9CBFE03F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk;
+				SYMROOT = "/Users/jorhabibeljaik/Code/snippets/PrettyErrors/build-clang/build";
+			};
+			name = Debug;
+		};
+		80EC97B376554461BB9222EE /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/jorhabibeljaik/Code/snippets/PrettyErrors/MyClass.h, /Users/jorhabibeljaik/Code/snippets/PrettyErrors/errorsHelper.h, );
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/jorhabibeljaik/Code/snippets/PrettyErrors/build-clang";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = MinSizeRel;
+		};
+		85F5439AB4114BEFA36E07DC /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk;
+				SYMROOT = "/Users/jorhabibeljaik/Code/snippets/PrettyErrors/build-clang/build";
+			};
+			name = MinSizeRel;
+		};
+		89A7CBA1F4474AC593BA4721 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/jorhabibeljaik/Code/snippets/PrettyErrors/MyClass.h, /Users/jorhabibeljaik/Code/snippets/PrettyErrors/errorsHelper.h, );
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "pretty-errors";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/jorhabibeljaik/Code/snippets/PrettyErrors/build-clang";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = Release;
+		};
+		8C4E3D6B0C9A4F0EA7F315AC /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/jorhabibeljaik/Code/snippets/PrettyErrors/MyClass.h, /Users/jorhabibeljaik/Code/snippets/PrettyErrors/errorsHelper.h, );
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "pretty-errors";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/jorhabibeljaik/Code/snippets/PrettyErrors/build-clang";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = MinSizeRel;
+		};
+		A4F1B174ABDD42B19F739310 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/jorhabibeljaik/Code/snippets/PrettyErrors/MyClass.h, /Users/jorhabibeljaik/Code/snippets/PrettyErrors/errorsHelper.h, );
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/jorhabibeljaik/Code/snippets/PrettyErrors/build-clang";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = Debug;
+		};
+		DC9DABBFBE804070BF4C825F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk;
+				SYMROOT = "/Users/jorhabibeljaik/Code/snippets/PrettyErrors/build-clang/build";
+			};
+			name = Release;
+		};
+		E5FEDF2CF1BE4420A08E7265 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk;
+				SYMROOT = "/Users/jorhabibeljaik/Code/snippets/PrettyErrors/build-clang/build";
+			};
+			name = RelWithDebInfo;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0691A8C2CCEF4210B09F873C /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4F1B174ABDD42B19F739310 /* Debug */,
+				44EC825616374F4D8CB985AD /* Release */,
+				3446C4DA695D4193AAAF0835 /* MinSizeRel */,
+				22B45E6715DF456CA9E39689 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		0CF870A071864191805D2203 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B3664F2C3CA4099BEF8109E /* Debug */,
+				27F601827DAC43C3AC231F35 /* Release */,
+				80EC97B376554461BB9222EE /* MinSizeRel */,
+				624E7E203BBD4FE8A30721B4 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		30C2404C77E2423194A7024A /* Build configuration list for PBXNativeTarget "pretty-errors" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3EC8694D5065459E967331FC /* Debug */,
+				89A7CBA1F4474AC593BA4721 /* Release */,
+				8C4E3D6B0C9A4F0EA7F315AC /* MinSizeRel */,
+				46D8D0819CA148F9AD3390DF /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		593A693222C74FA692B6741D /* Build configuration list for PBXProject "pretty-errors" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64227A70FE2F4B2B9CBFE03F /* Debug */,
+				DC9DABBFBE804070BF4C825F /* Release */,
+				85F5439AB4114BEFA36E07DC /* MinSizeRel */,
+				E5FEDF2CF1BE4420A08E7265 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 592602839B964B5B8268526E /* Project object */;
+}
