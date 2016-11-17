@@ -7,9 +7,9 @@ footCoordinates = [];
 % Compute closest point in trajectory
 closestXYonTraj = distance2curve([interpTraj.X', interpTraj.Y', zeros(length(interpTraj.Y),1)], startingPosition');
 plot(startingPosition(1), startingPosition(2), 'ro');
-pause;
+% pause;
 plot(closestXYonTraj(1), closestXYonTraj(2), 'ro');
-pause;
+% pause;
 
 % Find (approx) those coordinates in interpolated trajectory
 a = find(interpTraj.X > closestXYonTraj(1));
@@ -27,7 +27,7 @@ xTmp = interpTraj.X(a(1));
 yTmp = interpTraj.Y(a(1));
 
 plot(xTmp, yTmp, 'go')
-pause;
+% pause;
 firstPointTmp = [xTmp, yTmp, 0]';
 secondPointTmp = [interpTraj.X(a(2)), interpTraj.Y(a(2)), 0]';
 % angle

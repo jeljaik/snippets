@@ -6,7 +6,7 @@ addpath(genpath('distance2curve'));
 
 %% Create trajectory
 % Number of user-input points. 
-nPoints = 6;
+nPoints = 2;
 % Interpolation type ('linear' is another option)
 interpType = 'spline';
 % Number of interpolation points between every pair of points
@@ -24,7 +24,14 @@ gaitBasicParams.footLength = 10;
 gaitBasicParams.firstFootToMove = 'left';
 % horizon 
 horizon = 2;
-
+% Time in Single Support Phase
+gaitBasicParams.timeSS = 2;
+% Time in Double Support Phase
+gaitBasicParams.timeDS = 1;
+% Transition time
+gaitBasicParams.timeTransition = 2;
+% Time step
+gaitBasicParams.timeStep = 0.10;
 [leftFootCoordinates, rightFootCoordinates] = drawInitialStandingFeet( traj, horizon, gaitBasicParams );
 
 %% Draw the following nSteps
@@ -35,4 +42,8 @@ prevLeftFootCoord = leftFootCoordinates;
 prevRightFootCoord = rightFootCoordinates;
 [feetCoordinates, numSteps] = drawFootstepTrajectory( traj, horizon, gaitBasicParams, prevLeftFootCoord, prevRightFootCoord );
 
+%% Interpolate support phases
+[ interpolatedSteps, time ] = interpolateSupportPhases( feetCoordinates, gaitBasicParams, doPlot );
 
+%% Compute Lower and Upper Bounds a and b
+[ aCum, bCum ] = ComputeLowerAndUpperBounds( interpolatedSteps, gaitBasicParams, time, doPlot );

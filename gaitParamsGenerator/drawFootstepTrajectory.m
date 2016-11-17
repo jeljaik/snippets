@@ -63,5 +63,8 @@ while(~stop)
     numSteps = numSteps + 1;
 end
 
+feetCoordinates.LeftFootCoordinates = LeftFootCoordinates;
+feetCoordinates.RightFootCoordinates = RightFootCoordinates;
+
 end
 
