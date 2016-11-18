@@ -43,7 +43,11 @@ prevRightFootCoord = rightFootCoordinates;
 [feetCoordinates, numSteps] = drawFootstepTrajectory( traj, horizon, gaitBasicParams, prevLeftFootCoord, prevRightFootCoord );
 
 %% Interpolate support phases
-[ interpolatedSteps, time ] = interpolateSupportPhases( feetCoordinates, gaitBasicParams, doPlot );
+doPlot = true;
+[ interpolatedSteps, time ] = interpolateSupportPhases( feetCoordinates, gaitBasicParams, false );
 
 %% Compute Lower and Upper Bounds a and b
-[ aCum, bCum ] = ComputeLowerAndUpperBounds( interpolatedSteps, gaitBasicParams, time, doPlot );
+[ aCum, bCum, hLow, hUp ] = ComputeLowerAndUpperBounds( interpolatedSteps, gaitBasicParams, time, doPlot );
+
+%% Compute alpha and beta
+[ alphaCum, betaCum ] = computeRisingAndFallingEdges( aCum, bCum, time, hLow, hUp );

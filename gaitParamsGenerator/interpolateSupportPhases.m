@@ -33,20 +33,20 @@ end
 
 % WARNING: This assumes that the left foot always initiates the movement.
 for idx=index
-        % Single support (right foot) 
-        [time, interpolatedSteps] = partialInterpolateSSRight( interpolatedSteps, feetCoordinates, idx, time, gaitBasicParams );
-        % Double Support
-        [time, interpolatedSteps] = partialInterpolateDSLeftAhead( interpolatedSteps, feetCoordinates, idx, time, gaitBasicParams );
-        % Single Support (left foot)
-        [time, interpolatedSteps] = partialInterpolateSSLeft( interpolatedSteps, feetCoordinates, idx, time, gaitBasicParams );
-        % Double Support (right ahead)
-        [time, interpolatedSteps] = partialInterpolateDSRightAhead( interpolatedSteps, feetCoordinates, idx, time, gaitBasicParams );
+    % Single support (right foot)
+    [time, interpolatedSteps] = partialInterpolateSSRight( interpolatedSteps, feetCoordinates, idx, time, gaitBasicParams );
+    % Double Support
+    [time, interpolatedSteps] = partialInterpolateDSLeftAhead( interpolatedSteps, feetCoordinates, idx, time, gaitBasicParams );
+    % Single Support (left foot)
+    [time, interpolatedSteps] = partialInterpolateSSLeft( interpolatedSteps, feetCoordinates, idx, time, gaitBasicParams );
+    % Double Support (right ahead)
+    [time, interpolatedSteps] = partialInterpolateDSRightAhead( interpolatedSteps, feetCoordinates, idx, time, gaitBasicParams );
 end
 
 %% Plot x coordinates evolution
 x = [];
-figure(1);
 if (doPlot)
+    figure(1);
     for i=1:length(interpolatedSteps.LeftFootCoordinates)
         if isempty(interpolatedSteps.LeftFootCoordinates{i})
             x(end+1) = -1;
@@ -54,9 +54,9 @@ if (doPlot)
             x(end+1) = interpolatedSteps.LeftFootCoordinates{i}.position(1);
         end
     end
+    subplot(121);
+    plot(time,x), title('Left Foot X coord evolution'), axis tight;
 end
-subplot(121);
-plot(time,x), title('Left Foot X coord evolution'), axis tight;
 
 x = [];
 if (doPlot)
@@ -67,14 +67,14 @@ if (doPlot)
             x(end+1) = interpolatedSteps.LeftFootCoordinates{i}.position(2);
         end
     end
+    subplot(122);
+    plot(time,x), title('Left Foot Y coord evolution'),axis tight;
 end
-subplot(122);
-plot(time,x), title('Left Foot Y coord evolution'),axis tight;
 
 
 x = [];
-figure(2);
 if (doPlot)
+    figure(2);
     for i=1:length(interpolatedSteps.RightFootCoordinates)
         if isempty(interpolatedSteps.RightFootCoordinates{i})
             x(end+1) = -1;
@@ -82,9 +82,9 @@ if (doPlot)
             x(end+1) = interpolatedSteps.RightFootCoordinates{i}.position(1);
         end
     end
+    subplot(121);
+    plot(time,x), title('Right Foot X coord evolution'), axis tight;
 end
-subplot(121);
-plot(time,x), title('Right Foot X coord evolution'), axis tight;
 
 x = [];
 if (doPlot)
@@ -95,8 +95,8 @@ if (doPlot)
             x(end+1) = interpolatedSteps.RightFootCoordinates{i}.position(2);
         end
     end
+    subplot(122);
+    plot(time,x), title('Right Foot Y coord evolution'), axis tight;
 end
-subplot(122);
-plot(time,x), title('Right Foot Y coord evolution'), axis tight;
 end
 

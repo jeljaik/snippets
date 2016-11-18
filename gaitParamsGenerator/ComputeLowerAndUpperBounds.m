@@ -1,4 +1,4 @@
-function [ aCum, bCum ] = ComputeLowerAndUpperBounds( interpolatedSteps, gaitBasicParams, time, doPlot )
+function [ aCum, bCum, hLow, hUp ] = ComputeLowerAndUpperBounds( interpolatedSteps, gaitBasicParams, time, doPlot )
 %COMPUTELOWERANDUPPERBOUNDS Summary of this function goes here
 %   [ aCum, bCum ] = ComputeLowerAndUpperBounds( interpolatedSteps, gaitBasicParams, time, doPlot )
 
@@ -61,18 +61,26 @@ for i=1:length(interpolatedSteps.LeftFootCoordinates)
 end
 
 figure;
+subplot(211);
 if (doPlot)
-    plot(time, aCum(:,1), '-go', 'MarkerSize', 3); hold on;
-    plot(time, bCum(:,1), '-bo', 'MarkerSize', 4);
+    plot(time, aCum(:,1), '-o', 'MarkerSize', 3); hold on;
+    plot(time, bCum(:,1), '-o', 'MarkerSize', 3);
 end
-title('Lower bounds a0, b0'); axis tight;
+title('Lower bounds $a_0$, $b_0$', 'Interpreter', 'latex'); axis tight;
+h = legend('$a_0$', '$b_0$');
+set(h,'Interpreter', 'latex');
+hLow = gcf;
 
 figure;
+subplot(211);
 if (doPlot)
-    plot(time, aCum(:,2), '-go', 'MarkerSize', 3); hold on;
-    plot(time, bCum(:,2), '-bo', 'MarkerSize', 4);
+    plot(time, aCum(:,2), '-o', 'MarkerSize', 3); hold on;
+    plot(time, bCum(:,2), '-o', 'MarkerSize', 3);
 end
-title('Upper bounds a1, b1'); axis tight;
+title('Upper bounds $a_1$, $b_1$','Interpreter','latex'); axis tight;
+h=legend('$a_1$','$b_1$');
+set(h,'Interpreter','latex');
+hUp = gcf;
 
 end
 
