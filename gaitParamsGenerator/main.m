@@ -51,3 +51,11 @@ doPlot = true;
 
 %% Compute alpha and beta
 [ alphaCum, betaCum ] = computeRisingAndFallingEdges( aCum, bCum, time, hLow, hUp );
+
+%% Compute gamma, Support Phase Change variable
+% In theory this should be better obtained from a,b, alpha and beta. For
+% simplicity let's do it from interpolatedSteps
+[ gammaCum ] = computeGamma( interpolatedSteps, time, hLow, hUp, doPlot );
+
+%% Compute delta
+[ deltaCum ] = computeDelta( alphaCum, betaCum, time, hLow, hUp, doPlot); 

@@ -11,15 +11,17 @@ betaCum(:,1) = doComputeRisingAndFallingEdges(bCum(:,1));
 betaCum(:,2) = doComputeRisingAndFallingEdges(bCum(:,2));
 
 figure(hLow);
-subplot(212);
+subplot(412);
 plot(time, [alphaCum(:,1), betaCum(:,1)],'-o','MarkerSize',3);
+title('Shape Constraints $\alpha$, $\beta$','Interpreter','latex');
 h=legend('$\alpha_0$','$\beta_0$');
 set(h,'Interpreter','latex');
 axis tight;
 
 figure(hUp);
-subplot(212);
+subplot(412);
 plot(time, [alphaCum(:,2), betaCum(:,2)], '-o','MarkerSize',3);
+title('Shape Constraints $\alpha$, $\beta$','Interpreter','latex');
 h = legend('$\alpha_1$','$\beta_1$');
 set(h,'Interpreter','latex');
 axis tight;

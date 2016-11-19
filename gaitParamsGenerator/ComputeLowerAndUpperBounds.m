@@ -61,18 +61,18 @@ for i=1:length(interpolatedSteps.LeftFootCoordinates)
 end
 
 figure;
-subplot(211);
+subplot(411);
 if (doPlot)
     plot(time, aCum(:,1), '-o', 'MarkerSize', 3); hold on;
     plot(time, bCum(:,1), '-o', 'MarkerSize', 3);
 end
 title('Lower bounds $a_0$, $b_0$', 'Interpreter', 'latex'); axis tight;
-h = legend('$a_0$', '$b_0$');
+h = legend('$a_0$', '$b_0$','FontSize','12');
 set(h,'Interpreter', 'latex');
 hLow = gcf;
 
 figure;
-subplot(211);
+subplot(411);
 if (doPlot)
     plot(time, aCum(:,2), '-o', 'MarkerSize', 3); hold on;
     plot(time, bCum(:,2), '-o', 'MarkerSize', 3);
