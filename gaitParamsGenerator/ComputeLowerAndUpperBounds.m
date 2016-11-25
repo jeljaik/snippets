@@ -60,7 +60,7 @@ for i=1:length(interpolatedSteps.LeftFootCoordinates)
     
 end
 
-figure;
+figure('Name','linearly-constrained, mixed-integer BoS characterization','NumberTitle','off');
 subplot(411);
 if (doPlot)
     plot(time, aCum(:,1), '-o', 'MarkerSize', 3); hold on;
@@ -71,7 +71,7 @@ h = legend('$a_0$', '$b_0$','FontSize','12');
 set(h,'Interpreter', 'latex');
 hLow = gcf;
 
-figure;
+figure('Name','linearly-constrained, mixed-integer BoS characterization','NumberTitle','off');
 subplot(411);
 if (doPlot)
     plot(time, aCum(:,2), '-o', 'MarkerSize', 3); hold on;

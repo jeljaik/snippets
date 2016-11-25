@@ -25,6 +25,7 @@ end
         title('Potential change from DS to SS','Interpreter','latex');
         h=legend('$\delta$');
         set(h,'Interpreter','latex');
+        xlabel('time (s)');
         axis tight;
     end
 
