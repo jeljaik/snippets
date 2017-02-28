@@ -13,7 +13,48 @@
 */
 
 #include "gurobi_c++.h"
+#include <Gurobi.h>
+#include <string>
+#include <Eigen/Core>
+#include <Eigen/Dense>
 using namespace std;
+
+struct EigenParams
+{
+	EigenParams()
+	{
+		nrvar = 3;
+		nreq = 0;
+		nrineq = 2;
+
+		Q.resize(nrvar, nrvar);
+		Aeq.resize(nreq, nrvar);
+		Aineq.resize(nrineq, nrvar);
+
+		C.resize(nrvar);
+		Beq.resize(nreq);
+		Bineq.resize(nrineq);
+		XL.resize(nrvar);
+		XU.resize(nrvar);
+		X.resize(nrvar);
+
+		Aineq << -1, -2, -3, -1, -1, 0;
+		Bineq << -4, -1;
+
+		XL << 0, 0, 0;
+		XU << GRB_INFINITY, GRB_INFINITY, GRB_INFINITY;
+
+    // Linear part of the objective function
+		C << 1, 1, 0;
+    // Quadratic part of the objective function
+    Q << 1, 1, 0, 0, 1, 1, 0, 0, 1;
+	}
+
+	int nrvar, nreq, nrineq;
+	Eigen::MatrixXd Q, Aeq, Aineq;
+	Eigen::VectorXd C, Beq, Bineq, XL, XU, X;
+};
+
 
 static bool
 dense_optimize(GRBEnv* env,
@@ -54,8 +95,9 @@ dense_optimize(GRBEnv* env,
     obj += c[j]*vars[j];
   for (i = 0; i < cols; i++)
     for (j = 0; j < cols; j++)
-      if (Q[i*cols+j] != 0)
+      if (Q[i*cols+j] != 0) {
         obj += Q[i*cols+j]*vars[i]*vars[j];
+      }
 
   model.setObjective(obj);
 
@@ -92,13 +134,23 @@ int main(int   argc, char *argv[])
 
     char type[3];
     for (int i=0;i<3;i++) {
-      type[i] = GRB_INTEGER;
+      type[i] = GRB_CONTINUOUS;
     }
 
+    std::cout << "############## SOLVED WITH PURE GUROBI ################" << std::endl;
     success = dense_optimize(env, 2, 3, c, &Q[0][0], &A[0][0], sense, rhs,
                              lb, NULL, &type[0], sol, &objval);
 
-    cout << "x: " << sol[0] << " y: " << sol[1] << " z: " << sol[2] << endl;
+    std::cout << "############## SOLVED WITH EIGEN-GUROBI ################" << std::endl;
+    EigenParams _eigenParams;
+    Eigen::GurobiDense qp(_eigenParams.nrvar, _eigenParams.nreq, _eigenParams.nrineq);
+    std::cout << "Solve" << std::endl;
+    qp.solve(_eigenParams.Q, _eigenParams.C,
+      _eigenParams.Aeq, _eigenParams.Beq,
+      _eigenParams.Aineq, _eigenParams.Bineq,
+      _eigenParams.XL, _eigenParams.XU);
+    std::cout << " -- Result using Eigen: \n" << qp.result().transpose() << std::endl;
+    std::cout << " -- Result using pure GUROBI: \n" << "x: " << sol[0] << " y: " << sol[1] << " z: " << sol[2] << endl;
 
   } catch(GRBException e) {
     cout << "Error code = " << e.getErrorCode() << endl;
