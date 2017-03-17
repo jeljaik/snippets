@@ -51,5 +51,3 @@ find_package_handle_standard_args(GUROBI  DEFAULT_MSG
                                   GUROBI_LIBRARY GUROBI_CXX_LIBRARY GUROBI_INCLUDE_DIR)
 
 mark_as_advanced(GUROBI_INCLUDE_DIR GUROBI_LIBRARY GUROBI_CXX_LIBRARY)
-
-endif(GUROBI_INCLUDE_DIR)
