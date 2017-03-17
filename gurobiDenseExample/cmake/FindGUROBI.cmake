@@ -7,13 +7,6 @@
 #  GUROBI_INCLUDE_DIRS - The Gurobi include directories
 #  GUROBI_LIBRARIES - The libraries needed to use Gurobi
 
-if (GUROBI_INCLUDE_DIR)
-  # in cache already
-  set(GUROBI_FOUND TRUE)
-  set(GUROBI_INCLUDE_DIRS "${GUROBI_INCLUDE_DIR}" )
-  set(GUROBI_LIBRARIES "${GUROBI_LIBRARY};${GUROBI_CXX_LIBRARY}" )
-else (GUROBI_INCLUDE_DIR)
-
 find_path(GUROBI_INCLUDE_DIR
           NAMES gurobi_c++.h
           PATHS "$ENV{GUROBI_HOME}/include"
